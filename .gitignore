@@ -59,15 +59,12 @@ coverage.xml
 pip-log.txt
 pip-delete-this-directory.txt
 
-# Pytest
 .cache/
 
-# MyPy
 .mypy_cache/
 .dmypy.json
 dmypy.json
 
-# Coverage reports
 coverage.xml
 *.cover
 .hypothesis/
