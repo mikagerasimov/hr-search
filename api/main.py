@@ -1,15 +1,14 @@
-import os
-
+from config import Config
 from flask import Flask, jsonify
+from flask_cors import CORS
 
-API_PORT = int(os.getenv('API_PORT', '8000'))
-
+cfg = Config()
 app = Flask(__name__)
-
+CORS(app)
 
 @app.route('/', methods=['GET'])
 def index():
-    return jsonify({"index": "index"})
+    return jsonify({"index": "hello_backend"})
 
 
 @app.route('/api/data', methods=['GET'])
@@ -18,4 +17,4 @@ def data():
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=API_PORT)
+    app.run(host='0.0.0.0', port=cfg.api_port)
