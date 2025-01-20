@@ -6,7 +6,7 @@ import { cn } from "@/lib/shadcn/utils";
 const containerVariants = cva("", {
   variants: {
     variant: {
-      default: "container mx-auto px-4",
+      default: "container mx-auto px-4 pt-4",
       center: "h-screen flex flex-col items-center justify-center",
     },
   },
