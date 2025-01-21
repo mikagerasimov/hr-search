@@ -22,7 +22,7 @@ if __name__ == '__main__':
     app.run(host='0.0.0.0', port=cfg.api_port)
 
 
-#Запуск пайплайна, не работает, не знаю почему
+#Запуск пайплайна
     excel = path.join()
     results = working(excel)
     print(results)
